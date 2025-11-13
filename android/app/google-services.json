@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "275693647038",
+    "project_id": "assist-android-ios-app",
+    "storage_bucket": "assist-android-ios-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:275693647038:android:8ccf42830a87a7b49ddaef",
+        "android_client_info": {
+          "package_name": "au.com.roadservices.assist"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "275693647038-ib3faghg4lvsurpg6fc9m4eue3bln5od.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDgAjKfW5QEPysMkwnElFaWLxPKEb2AbH0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "275693647038-ib3faghg4lvsurpg6fc9m4eue3bln5od.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "275693647038-g5o7gbgoimtcm7dk58u2bm13bkt1llkl.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "au.com.roadservices.assist.customer"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -2,6 +2,7 @@ import 'package:assist/Controllers/global_controller.dart';
 import 'package:assist/Controllers/jobs_datalist_controller.dart';
 import 'package:assist/Controllers/rating_controller.dart';
 import 'package:assist/Controllers/theme_controller.dart';
+import 'package:assist/apis/apis_constant.dart';
 import 'package:assist/apis/response/job_data_response.dart';
 import 'package:assist/app_constants/app_images_path.dart';
 import 'package:assist/utils/Widgets/widgets_file.dart';
@@ -47,7 +48,9 @@ class JobDetailsWithMapController extends GetxController {
 
   List<LatLng> polylineCoordinates = [];
 
-  PolylinePoints polylinePoints = PolylinePoints();
+  PolylinePoints polylinePoints = PolylinePoints(
+    apiKey: APIsConstant().googleApiKey,
+  );
 
   //Timer timer;
   int rating = 0;

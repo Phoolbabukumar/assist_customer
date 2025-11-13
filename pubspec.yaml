@@ -58,7 +58,7 @@ dependencies:
   # date & time format
   intl: ^0.18.1
   # http calls
-  http: ^0.13.5
+  http: ^1.2.1
   # to get location
   location: ^5.0.3
   # Google maps
@@ -70,7 +70,7 @@ dependencies:
   # shimmmer
   shimmer: ^3.0.0
   # get uuid
-  uuid: ^3.0.7
+  uuid: ^4.5.1
   # get location from geo code
   geocoding: ^2.0.5
   # for otp layout
@@ -93,26 +93,26 @@ dependencies:
   #for internet Check
   connectivity_plus:
   #for notification
-  flutter_local_notifications: ^18.0.1
+  flutter_local_notifications: ^19.5.0
   #for version of app
   package_info_plus: ^9.0.0
   #for polyline
-  flutter_polyline_points: ^1.0.0
+  flutter_polyline_points: ^3.1.0
   # app permission_handler:
   permission_handler: ^10.2.0
   # image_picker:
   image_picker: ^1.0.4
   #term condition page
   flutter_inappwebview: ^6.1.5
-  syncfusion_flutter_pdfviewer: ^20.4.44
-  flutter_map: ^4.0.0
-  latlong2: ^0.8.1
+  syncfusion_flutter_pdfviewer: ^29.1.38
+  flutter_map: ^8.2.2
+  latlong2: ^0.9.1
   #flutter_timer_countdown: ^1.0.5
   local_auth: ^2.1.6
   slide_countdown: ^0.6.0
   flutter_credit_card: ^3.0.7
   credit_card_form: ^0.0.7
-  timezone: ^0.9.2
+  timezone: ^0.10.0
   flutter_screenutil: ^5.9.3
 
 
@@ -121,15 +121,13 @@ dependencies:
 
 
   # auto read otp
-  otp_autofill: ^3.0.0
+  otp_autofill: 4.1.0
   another_flushbar: ^1.12.30
   carousel_slider: ^5.0.0
   #timer_count_down: ^2.2.2
   in_app_update: ^4.2.3
 
   dio:
-
-
 
 
 dev_dependencies:
@@ -155,9 +153,9 @@ flutter:
   uses-material-design: true
 
   # To add assets to your application, add an assets section, like this:
-  assets:
-    - assets/images/
-    - assets/svg/
+assets:
+  - assets/images/
+  - assets/svg/
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
@@ -171,12 +169,12 @@ flutter:
   # "family" key with the font family name, and a "fonts" key with a
   # list giving the asset and other descriptors for the font. For
   # example:
-  fonts:
-    - family: Avenir
-      fonts:
-        - asset: fonts/fonts/Avenir-Black_0.ttf
-          weight: 700
-        - asset: fonts/fonts/Avenir-Medium.ttf
-          weight: 300
+fonts:
+  - family: Avenir
+    fonts:
+      - asset: fonts/fonts/Avenir-Black_0.ttf
+        weight: 700
+      - asset: fonts/fonts/Avenir-Medium.ttf
+        weight: 300
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
