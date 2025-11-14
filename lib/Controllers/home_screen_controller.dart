@@ -183,7 +183,7 @@ class HomeScreenController extends GetxController {
     if (profile != null) {
       printMessage(tag, "Profile Response: $profile");
       remainingCallouts.value = profile.remainingCallouts ?? 0;
-      FirebaseNotification().getFCMToken();
+      // FirebaseNotification().getFCMToken();
       update();
     } else {
       printMessage(tag, "Profile data is null");

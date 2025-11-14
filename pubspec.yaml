@@ -1,180 +1,101 @@
 name: assist
 description: A new Flutter project.
 
-# The following line prevents the package from being accidentally published to
-# pub.dev using `flutter pub publish`. This is preferred for private packages.
-publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+publish_to: 'none'
 
-# The following defines the version and build number for your application.
-# A version number is three numbers separated by dots, like 1.2.43
-# followed by an optional build number separated by a +.
-# Both the version and the builder number may be overridden in flutter
-# build by specifying --build-name and --build-number, respectively.
-# In Android, build-name is used as versionName while build-number used as versionCode.
-# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
-# In iOS, build-name is used as CFBundleShortVersionString while build-number is used as CFBundleVersion.
-# Read more about iOS versioning at
-# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
-# In Windows, build-name is used as the major, minor, and patch parts
-# of the product and file versions `while build-number is used as the build suffix.
-#version: 883136.13447.1+46  - new version for test server to testflight- tejpal 17 nov
-#version: 883136.1116.2+47   -date 27-11-2023
-#version: 883136.1117.2+48   -date 29-11-2023
-#version: 883136.1117.2+49    -date 30-11-2023
-#version: 883136.1301.2+59    -date 22-07-2024
-#version: 883136.1303.2+60    -date 24-07-2024
-# version: 883136.1329.2+61   -date 23-01-2025 ## Done maintanence & tiles hide work in this branch
-version: 883136.1329.2+62
+# version history
+# version: 883136.13447.1+46  - new version for test server to testflight- tejpal 17 nov
+# version: 883136.1116.2+47   - date 27-11-2023
+# version: 883136.1117.2+48   - date 29-11-2023
+# version: 883136.1117.2+49   - date 30-11-2023
+# version: 883136.1301.2+59   - date 22-07-2024
+# version: 883136.1303.2+60   - date 24-07-2024
+# version: 883136.1329.2+61   - date 23-01-2025 (maintenance & tiles hide work)
+version: 883136.1329.3+63
 
 environment:
   sdk: '>=2.18.5 <3.0.0'
 
-# Dependencies specify other packages that your package needs in order to work.
-# To automatically upgrade your package dependencies to the latest versions
-# consider running `flutter pub upgrade --major-versions`. Alternatively,
-# dependencies can be manually updated by changing the version numbers below to
-# the latest version available on pub.dev. To see which dependencies have newer
-# versions available, run `flutter pub outdated`.
 dependencies:
   flutter:
     sdk: flutter
 
-
-  # The following adds the Cupertino Icons font to your application.
-  # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.5
 
-  # fire base init
+  # Firebase
   firebase_core: ^2.4.0
-  # for FCM
   firebase_messaging: ^14.1.4
-  # for storage
-  get_storage: ^2.0.3
-  # getX
-  get: ^4.6.5
-  # to get geo location
-  geolocator: ^10.1.1
 
-  # date & time format
-  intl: ^0.18.1
-  # http calls
-  http: ^1.2.1
-  # to get location
+  # Storage & State
+  get_storage: ^2.0.3
+  get: ^4.6.5
+
+  # Location
+  geolocator: ^10.1.1
   location: ^5.0.3
-  # Google maps
-  google_maps_flutter:
-  # for animation
-  flutter_spinkit: ^5.1.0
-  # telephone & email
-  url_launcher: ^6.1.7
-  # shimmmer
-  shimmer: ^3.0.0
-  # get uuid
-  uuid: ^4.5.1
-  # get location from geo code
   geocoding: ^2.0.5
-  # for otp layout
-  sms_autofill: ^2.3.0
-  # svg icons
+  google_maps_flutter:
+
+  # UI & Animation
+  flutter_spinkit: ^5.1.0
+  shimmer: ^3.0.0
   flutter_svg: ^2.0.5
-  # search in dropdown
-  dropdown_search: ^5.0.5
-  # web view
-  webview_flutter: ^4.0.7
-  # pusher
-  pusher_client:
-    path: C:/Users/91725/OneDrive/Documents/pusherClient_somya
-  # footer navigation
-  convex_bottom_bar: ^3.1.0+1
-  # for table view
   horizontal_data_table: ^4.1.4
-  # sliding panel
   sliding_up_panel: ^2.0.0+1
-  #for internet Check
+  convex_bottom_bar: ^3.1.0+1
+  carousel_slider: ^5.0.0
+
+  # Utils
+  intl: ^0.18.1
+  http: ^1.2.1
+  uuid: ^4.5.1
+  url_launcher: ^6.1.7
+  sms_autofill: ^2.3.0
+  dropdown_search: ^5.0.5
+  webview_flutter: ^4.0.7
   connectivity_plus:
-  #for notification
   flutter_local_notifications: ^19.5.0
-  #for version of app
   package_info_plus: ^9.0.0
-  #for polyline
   flutter_polyline_points: ^3.1.0
-  # app permission_handler:
   permission_handler: ^10.2.0
-  # image_picker:
   image_picker: ^1.0.4
-  #term condition page
   flutter_inappwebview: ^6.1.5
   syncfusion_flutter_pdfviewer: ^29.1.38
   flutter_map: ^8.2.2
   latlong2: ^0.9.1
-  #flutter_timer_countdown: ^1.0.5
   local_auth: ^2.1.6
   slide_countdown: ^0.6.0
   flutter_credit_card: ^3.0.7
   credit_card_form: ^0.0.7
   timezone: ^0.10.0
   flutter_screenutil: ^5.9.3
-
-
   pinput: ^3.0.1
-  # for local storage
-
-
-  # auto read otp
   otp_autofill: 4.1.0
   another_flushbar: ^1.12.30
-  carousel_slider: ^5.0.0
-  #timer_count_down: ^2.2.2
   in_app_update: ^4.2.3
-
   dio:
 
+  # Local pusher client
+  pusher_client:
+    path: C:/Users/91725/OneDrive/Documents/pusherClient_somya
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
 
-  # The "flutter_lints" package below contains a set of recommended lints to
-  # encourage good coding practices. The lint set provided by the package is
-  # activated in the `analysis_options.yaml` file located at the root of your
-  # package. See that file for information about deactivating specific lint
-  # rules and activating additional ones.
   flutter_lints: ^2.0.0
 
-# For information on the generic Dart part of this file, see the
-# following page: https://dart.dev/tools/pub/pubspec
-
-# The following section is specific to Flutter packages.
 flutter:
-
-  # The following line ensures that the Material Icons font is
-  # included with your application, so that you can use the icons in
-  # the material Icons class.
   uses-material-design: true
 
-  # To add assets to your application, add an assets section, like this:
-assets:
-  - assets/images/
-  - assets/svg/
-  #   - images/a_dot_ham.jpeg
+  assets:
+    - assets/images/
+    - assets/svg/
 
-  # An image asset can refer to one or more resolution-specific "variants", see
-  # https://flutter.dev/assets-and-images/#resolution-aware
-
-  # For details regarding adding assets from package dependencies, see
-  # https://flutter.dev/assets-and-images/#from-packages
-
-  # To add custom fonts to your application, add a fonts section here,
-  # in this "flutter" section. Each entry in this list should have a
-  # "family" key with the font family name, and a "fonts" key with a
-  # list giving the asset and other descriptors for the font. For
-  # example:
-fonts:
-  - family: Avenir
-    fonts:
-      - asset: fonts/fonts/Avenir-Black_0.ttf
-        weight: 700
-      - asset: fonts/fonts/Avenir-Medium.ttf
-        weight: 300
-  # For details regarding fonts from package dependencies,
-  # see https://flutter.dev/custom-fonts/#from-packages
+  fonts:
+    - family: Avenir
+      fonts:
+        - asset: fonts/fonts/Avenir-Black_0.ttf
+          weight: 700
+        - asset: fonts/fonts/Avenir-Medium.ttf
+          weight: 300
